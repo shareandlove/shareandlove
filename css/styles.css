@@ -1,3 +1,4 @@
+/******************** TAG SELECTOR ********************/
 body {
   background-color: rgb(180, 158, 217);
 }
@@ -11,3 +12,31 @@ hr {
     border-width: 5px;
     width: 5%;
   }
+  /*
+img {background-color: rgb(113, 87, 156);
+}
+*/
+/* unvisited link */
+a:link {
+  color: rgb(113, 87, 156);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(113, 87, 156);
+}
+/* mouse over link */
+a:hover {
+  color: rgb(81, 38, 153);
+}
+
+/* selected link */
+a:active {
+  color: rgb(255, 201, 201);
+}
+/******************** CLASS SELECTOR ********************/
+.dp:hover {background-color: rgb(113, 87, 156);}
+
+
+/******************** ID SELECTOR ********************/
+#fb
