@@ -1,23 +1,65 @@
 /******************** TAG SELECTOR ********************/
+/*
+font-family: 'Pacifico', cursive;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Texturina', serif;
+*/
+
+/******************** TAG SELECTOR ********************/
 body {
+  margin: 0;
+  color: rgb(24, 15, 51);
   background-color: rgb(180, 158, 217);
 }
-h1 {color: rgb(113, 87, 156);}
-h2 {color: rgb(113, 87, 156);}
-h3 {color: rgb(113, 87, 156);}
+h1 {
+  font-family: "Pacifico", cursive;
+  color: rgb(113, 87, 156);
+  text-shadow: 2px 2px rgb(88, 49, 151);
+}
+h2 {
+  font-family: "Texturina", serif;
+  color: rgb(113, 87, 156);
+  text-shadow: 1px 1px rgb(88, 49, 151);
+}
+h3 {
+  font-family: "Philosopher", sans-serif;
+  color: rgb(113, 87, 156);
+  text-shadow: 1px 1px rgb(88, 49, 151);
+}
+/* "ex" is a class
+  p.ex {
+  color: rgb(24, 15, 51);
+}
+*/
+p {
+  line-height: 2;
+}
 hr {
-    border-style: none;
-    border-top-style: dotted;
-    border-color: rgb(255, 201, 201);
-    border-width: 5px;
-    width: 5%;
-  }
-  /*
+  border-style: none;
+  border-top-style: dotted;
+  border-color: rgb(255, 201, 201);
+  border-width: 5px;
+  width: 5%;
+}
+footer {
+  bottom: 0;
+  left: 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: -1;
+  background-color: rgb(97, 61, 158);
+}
+/*
 img {background-color: rgb(113, 87, 156);
 }
 */
+
+/******************** CLASS SELECTOR ********************/
+
 /* unvisited link */
 a:link {
+  text-decoration: none;
   color: rgb(113, 87, 156);
 }
 
@@ -27,16 +69,78 @@ a:visited {
 }
 /* mouse over link */
 a:hover {
-  color: rgb(81, 38, 153);
+  color: rgb(110, 49, 218);
 }
 
 /* selected link */
 a:active {
   color: rgb(255, 201, 201);
 }
-/******************** CLASS SELECTOR ********************/
-.dp:hover {background-color: rgb(113, 87, 156);}
+.dp:hover {
+  background-color: rgb(152, 117, 209);
+}
+.dp {
+  margin-top: 10px;
+}
+.admin-page {
+  text-align: center;
+}
+.index-page {
+  text-align: center;
+}
+.bottom {
+  margin-bottom: 0;
+  padding: 20px 0 6px;
+}
+.btn {
+  background: #ae88f0;
+  background-image: -webkit-linear-gradient(top, #ae88f0, #71579c);
+  background-image: -moz-linear-gradient(top, #ae88f0, #71579c);
+  background-image: -ms-linear-gradient(top, #ae88f0, #71579c);
+  background-image: -o-linear-gradient(top, #ae88f0, #71579c);
+  background-image: linear-gradient(to bottom, #ae88f0, #71579c);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #180f33;
+  font-size: 20px;
+  padding: 6px 10px 6px 10px;
+  text-decoration: none;
+}
 
-
+.btn:hover {
+  background: #71579c;
+  background-image: -webkit-linear-gradient(top, #71579c, #ae88f0);
+  background-image: -moz-linear-gradient(top, #71579c, #ae88f0);
+  background-image: -ms-linear-gradient(top, #71579c, #ae88f0);
+  background-image: -o-linear-gradient(top, #71579c, #ae88f0);
+  background-image: linear-gradient(to bottom, #71579c, #ae88f0);
+  text-decoration: none;
+}
+.footer {
+  position: relative;
+  text-align: center;
+  background-color: rgb(97, 61, 158);
+  margin-top: 10px;
+}
+.bottom {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px 0 0 0;
+  color: antiquewhite;
+}
 /******************** ID SELECTOR ********************/
-#fb
+#detail {
+  width: 40%;
+  font-family: "Philosopher", sans-serif;
+  margin: auto;
+}
+/*
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(97, 61, 158);
+}
+*/
